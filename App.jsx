@@ -1,13 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import Hello from './src/components/Hello';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Hello>World</Hello>
+      <Hello bang>World</Hello>
       {/* eslint-disable-next-line */}
       <StatusBar style="auto" />
     </View>
