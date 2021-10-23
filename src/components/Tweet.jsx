@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, ScrollView, Text, StyleSheet, Image } from 'react-native';
+import { Feather, AntDesign } from '@expo/vector-icons';
 
 export default function Tweet() {
   return (
-    <View>
+    <ScrollView>
       {/* Tweet1 */}
       <View style={styles.tweetItem}>
         <View style={styles.tweetItemLeft}>
@@ -23,6 +24,12 @@ export default function Tweet() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, ...
           </Text>
+          <View style={styles.tweetActivities}>
+            <Feather name="message-circle" size={17} color="gray" />
+            <AntDesign name="retweet" size={17} color="gray" />
+            <Feather name="heart" size={17} color="gray" />
+            <Feather name="share" size={17} color="gray" />
+          </View>
         </View>
       </View>
       {/* Tweet2 */}
@@ -44,6 +51,12 @@ export default function Tweet() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, ...
           </Text>
+          <View style={styles.tweetActivities}>
+            <Feather name="message-circle" size={17} color="gray" />
+            <AntDesign name="retweet" size={17} color="gray" />
+            <Feather name="heart" size={17} color="gray" />
+            <Feather name="share" size={17} color="gray" />
+          </View>
         </View>
       </View>
       {/* Tweet3 */}
@@ -65,6 +78,12 @@ export default function Tweet() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, ...
           </Text>
+          <View style={styles.tweetActivities}>
+            <Feather name="message-circle" size={17} color="gray" />
+            <AntDesign name="retweet" size={17} color="gray" />
+            <Feather name="heart" size={17} color="gray" />
+            <Feather name="share" size={17} color="gray" />
+          </View>
         </View>
       </View>
       {/* Tweet4 */}
@@ -86,6 +105,12 @@ export default function Tweet() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, ...
           </Text>
+          <View style={styles.tweetActivities}>
+            <Feather name="message-circle" size={17} color="gray" />
+            <AntDesign name="retweet" size={17} color="gray" />
+            <Feather name="heart" size={17} color="gray" />
+            <Feather name="share" size={17} color="gray" />
+          </View>
         </View>
       </View>
       {/* Tweet5 */}
@@ -107,9 +132,150 @@ export default function Tweet() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, ...
           </Text>
+          <View style={styles.tweetActivities}>
+            <Feather name="message-circle" size={17} color="gray" />
+            <AntDesign name="retweet" size={17} color="gray" />
+            <Feather name="heart" size={17} color="gray" />
+            <Feather name="share" size={17} color="gray" />
+          </View>
         </View>
       </View>
-    </View>
+      {/* Tweet6 */}
+      <View style={styles.tweetItem}>
+        <View style={styles.tweetItemLeft}>
+          <Image
+            style={styles.userImage}
+            source={require('../../assets//userImage.jpeg')}
+          />
+        </View>
+        <View style={styles.tweetItemRight}>
+          <View style={styles.tweetHeader}>
+            <Text style={styles.tweetUsername}>tomoyaki</Text>
+            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetPostedAt}>15m</Text>
+          </View>
+          <Text style={styles.tweetMessage}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, ...
+          </Text>
+          <View style={styles.tweetActivities}>
+            <Feather name="message-circle" size={17} color="gray" />
+            <AntDesign name="retweet" size={17} color="gray" />
+            <Feather name="heart" size={17} color="gray" />
+            <Feather name="share" size={17} color="gray" />
+          </View>
+        </View>
+      </View>
+      {/* Tweet7 */}
+      <View style={styles.tweetItem}>
+        <View style={styles.tweetItemLeft}>
+          <Image
+            style={styles.userImage}
+            source={require('../../assets//userImage.jpeg')}
+          />
+        </View>
+        <View style={styles.tweetItemRight}>
+          <View style={styles.tweetHeader}>
+            <Text style={styles.tweetUsername}>tomoyaki</Text>
+            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetPostedAt}>15m</Text>
+          </View>
+          <Text style={styles.tweetMessage}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, ...
+          </Text>
+          <View style={styles.tweetActivities}>
+            <Feather name="message-circle" size={17} color="gray" />
+            <AntDesign name="retweet" size={17} color="gray" />
+            <Feather name="heart" size={17} color="gray" />
+            <Feather name="share" size={17} color="gray" />
+          </View>
+        </View>
+      </View>
+      {/* Tweet8 */}
+      <View style={styles.tweetItem}>
+        <View style={styles.tweetItemLeft}>
+          <Image
+            style={styles.userImage}
+            source={require('../../assets//userImage.jpeg')}
+          />
+        </View>
+        <View style={styles.tweetItemRight}>
+          <View style={styles.tweetHeader}>
+            <Text style={styles.tweetUsername}>tomoyaki</Text>
+            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetPostedAt}>15m</Text>
+          </View>
+          <Text style={styles.tweetMessage}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, ...
+          </Text>
+          <View style={styles.tweetActivities}>
+            <Feather name="message-circle" size={17} color="gray" />
+            <AntDesign name="retweet" size={17} color="gray" />
+            <Feather name="heart" size={17} color="gray" />
+            <Feather name="share" size={17} color="gray" />
+          </View>
+        </View>
+      </View>
+      {/* Tweet9 */}
+      <View style={styles.tweetItem}>
+        <View style={styles.tweetItemLeft}>
+          <Image
+            style={styles.userImage}
+            source={require('../../assets//userImage.jpeg')}
+          />
+        </View>
+        <View style={styles.tweetItemRight}>
+          <View style={styles.tweetHeader}>
+            <Text style={styles.tweetUsername}>tomoyaki</Text>
+            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetPostedAt}>15m</Text>
+          </View>
+          <Text style={styles.tweetMessage}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, ...
+          </Text>
+          <View style={styles.tweetActivities}>
+            <Feather name="message-circle" size={17} color="gray" />
+            <AntDesign name="retweet" size={17} color="gray" />
+            <Feather name="heart" size={17} color="gray" />
+            <Feather name="share" size={17} color="gray" />
+          </View>
+        </View>
+      </View>
+      {/* Tweet10 */}
+      <View style={styles.tweetItem}>
+        <View style={styles.tweetItemLeft}>
+          <Image
+            style={styles.userImage}
+            source={require('../../assets//userImage.jpeg')}
+          />
+        </View>
+        <View style={styles.tweetItemRight}>
+          <View style={styles.tweetHeader}>
+            <Text style={styles.tweetUsername}>tomoyaki</Text>
+            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetPostedAt}>15m</Text>
+          </View>
+          <Text style={styles.tweetMessage}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, ...
+          </Text>
+          <View style={styles.tweetActivities}>
+            <Feather name="message-circle" size={17} color="gray" />
+            <AntDesign name="retweet" size={17} color="gray" />
+            <Feather name="heart" size={17} color="gray" />
+            <Feather name="share" size={17} color="gray" />
+          </View>
+        </View>
+      </View>
+    </ScrollView>
   );
 }
 
@@ -142,21 +308,30 @@ const styles = StyleSheet.create({
   tweetUsername: {
     marginHorizontal: 5,
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: '800',
   },
   tweetUserId: {
     color: 'gray',
     fontSize: 16,
+    fontWeight: '600',
   },
   tweetPostedAt: {
     marginHorizontal: 5,
     color: 'gray',
     fontSize: 16,
+    fontWeight: '500',
   },
   tweetMessage: {
     // ackgroundColor: 'green',
-    fontSize: 15,
+    fontSize: 16,
     lineHeight: 18,
     padding: 5,
+    fontWeight: '500',
+  },
+  tweetActivities: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingVertical: 4,
+    paddingHorizontal: 25,
   },
 });
