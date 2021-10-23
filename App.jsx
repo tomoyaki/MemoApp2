@@ -127,8 +127,8 @@ export default function App() {
         </View>
       </View>
       {/* CircleButton */}
-      <View style={styles.yyy}>
-        <Text>+</Text>
+      <View style={styles.circleButton}>
+        <Text style={styles.circleButtonLabel}>+</Text>
       </View>
     </View>
   );
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
   },
   appbar: {
     width: '100%',
-    height: 104,
+    height: 70,
     backgroundColor: '#467FD3',
     justifyContent: 'flex-end',
   },
@@ -164,8 +164,11 @@ const styles = StyleSheet.create({
   tweetItem: {
     flexDirection: 'row',
     borderBottomWidth: 0.5,
-    borderColor: 'gray',
-    padding: 10,
+    borderColor: 'rgba(0, 0, 0, 0.3)',
+    paddingTop: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingBottom: 5,
   },
   tweetItemLeft: {
     // backgroundColor: 'red',
@@ -202,5 +205,25 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 18,
     padding: 5,
+  },
+  circleButton: {
+    position: 'absolute',
+    right: 20,
+    bottom: 40,
+    backgroundColor: '#467FD3',
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: '#000000',
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.25,
+    shadowRadius: 8,
+  },
+  circleButtonLabel: {
+    color: '#ffffff',
+    fontSize: 40,
+    lineHeight: 40,
   },
 });
