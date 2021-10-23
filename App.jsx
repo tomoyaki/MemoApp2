@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Image } from 'react-native';
 
 export default function App() {
   return (
@@ -11,29 +11,118 @@ export default function App() {
           <Text style={styles.appbarRight}>ログアウト</Text>
         </View>
       </View>
-      {/* Contents */}
-      <View style={styles.xxx}>
-        <View>
-          <View>
-            <Text>tweet1</Text>
-            <Text>2020/12/24 10:00</Text>
+      {/* Tweets1 */}
+      <View>
+        <View style={styles.tweetItem}>
+          <View style={styles.tweetItemLeft}>
+            <Image
+              style={styles.userImage}
+              source={require('./assets/userImage.jpeg')}
+            />
           </View>
-          <View>
-            <Text>x</Text>
+          <View style={styles.tweetItemRight}>
+            <View style={styles.tweetHeader}>
+              <Text style={styles.tweetUsername}>tomoyaki</Text>
+              <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+              <Text style={styles.tweetPostedAt}>15m</Text>
+            </View>
+            <Text style={styles.tweetMessage}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, ...
+            </Text>
           </View>
-          <View>
-            <Text>tweet2</Text>
-            <Text>2020/12/24 10:00</Text>
+        </View>
+      </View>
+      {/* Tweets2 */}
+      <View>
+        <View style={styles.tweetItem}>
+          <View style={styles.tweetItemLeft}>
+            <Image
+              style={styles.userImage}
+              source={require('./assets/userImage.jpeg')}
+            />
           </View>
-          <View>
-            <Text>x</Text>
+          <View style={styles.tweetItemRight}>
+            <View style={styles.tweetHeader}>
+              <Text style={styles.tweetUsername}>tomoyaki</Text>
+              <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+              <Text style={styles.tweetPostedAt}>15m</Text>
+            </View>
+            <Text style={styles.tweetMessage}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, ...
+            </Text>
           </View>
-          <View>
-            <Text>tweet3</Text>
-            <Text>2020/12/24 10:00</Text>
+        </View>
+      </View>
+      {/* Tweets3 */}
+      <View>
+        <View style={styles.tweetItem}>
+          <View style={styles.tweetItemLeft}>
+            <Image
+              style={styles.userImage}
+              source={require('./assets/userImage.jpeg')}
+            />
           </View>
-          <View>
-            <Text>x</Text>
+          <View style={styles.tweetItemRight}>
+            <View style={styles.tweetHeader}>
+              <Text style={styles.tweetUsername}>tomoyaki</Text>
+              <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+              <Text style={styles.tweetPostedAt}>15m</Text>
+            </View>
+            <Text style={styles.tweetMessage}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, ...
+            </Text>
+          </View>
+        </View>
+      </View>
+      {/* Tweets4 */}
+      <View>
+        <View style={styles.tweetItem}>
+          <View style={styles.tweetItemLeft}>
+            <Image
+              style={styles.userImage}
+              source={require('./assets/userImage.jpeg')}
+            />
+          </View>
+          <View style={styles.tweetItemRight}>
+            <View style={styles.tweetHeader}>
+              <Text style={styles.tweetUsername}>tomoyaki</Text>
+              <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+              <Text style={styles.tweetPostedAt}>15m</Text>
+            </View>
+            <Text style={styles.tweetMessage}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, ...
+            </Text>
+          </View>
+        </View>
+      </View>
+      {/* Tweets5 */}
+      <View>
+        <View style={styles.tweetItem}>
+          <View style={styles.tweetItemLeft}>
+            <Image
+              style={styles.userImage}
+              source={require('./assets/userImage.jpeg')}
+            />
+          </View>
+          <View style={styles.tweetItemRight}>
+            <View style={styles.tweetHeader}>
+              <Text style={styles.tweetUsername}>tomoyaki</Text>
+              <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+              <Text style={styles.tweetPostedAt}>15m</Text>
+            </View>
+            <Text style={styles.tweetMessage}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, ...
+            </Text>
           </View>
         </View>
       </View>
@@ -71,5 +160,47 @@ const styles = StyleSheet.create({
     lineHeight: 32,
     color: '#ffffff',
     fontWeight: 'bold',
+  },
+  tweetItem: {
+    flexDirection: 'row',
+    borderBottomWidth: 0.5,
+    borderColor: 'gray',
+    padding: 10,
+  },
+  tweetItemLeft: {
+    // backgroundColor: 'red',
+  },
+  userImage: {
+    width: 50,
+    height: 50,
+    borderRadius: 50,
+  },
+  tweetItemRight: {
+    flex: 1,
+    // backgroundColor: 'yellow',
+  },
+  tweetHeader: {
+    flexDirection: 'row',
+    // backgroundColor: 'red',
+  },
+  tweetUsername: {
+    marginHorizontal: 5,
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  tweetUserId: {
+    color: 'gray',
+    fontSize: 16,
+  },
+  tweetPostedAt: {
+    marginHorizontal: 5,
+    color: 'gray',
+    fontSize: 16,
+  },
+  tweetMessage: {
+    // ackgroundColor: 'green',
+    fontSize: 15,
+    lineHeight: 18,
+    padding: 5,
   },
 });
