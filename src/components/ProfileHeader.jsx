@@ -1,41 +1,19 @@
 import React from 'react';
-import { View, ScrollView, Text, StyleSheet, Image } from 'react-native';
-import { Feather, AntDesign } from '@expo/vector-icons';
+import { View, Text, Image, StyleSheet } from 'react-native';
 
-import AppBar from '../components/AppBar';
-import ProfileHeader from '../components/ProfileHeader';
-
-export default function TweetDetailScreen() {
+export default function ProfileHeader() {
   return (
-    <View style={styles.container}>
-      <AppBar />
-      <ScrollView>
-        <ProfileHeader />
-        {/* blue-1st */}
-        <View style={styles.tweetDetailContent}>
-          <Text style={styles.tweetDetailContentText}>
-            何も次第ちょうどその推察院とかいうののためで評しましです。できるだけ事実が参考通りははなはだそうした出立ううばかりに待っているべからをも標榜しならますて、そうにはなれななくたらた。
-          </Text>
-        </View>
-        {/* blue-2nd */}
-        <View style={styles.tweetDetailPostedAt}>
-          <Text style={styles.tweetDetailPostedAtText}>11:45 2021/10/23</Text>
-        </View>
-        {/* blue-3rd */}
-        <View style={styles.tweetDetailNotification}>
-          <Text style={styles.tweetDetailNotificationText}>
-            <Text style={styles.tweetDetailNotificationNumber}>1</Text>
-            件のいいね
-          </Text>
-        </View>
-        {/* blue-4th */}
-        <View style={styles.tweetDetailActivityIcons}>
-          <Feather name="message-circle" size={24} color="gray" />
-          <AntDesign name="retweet" size={24} color="gray" />
-          <Feather name="heart" size={24} color="gray" />
-          <Feather name="share" size={24} color="gray" />
-        </View>
-      </ScrollView>
+    <View style={styles.tweetDetailHeader}>
+      <View style={styles.tweetDetailHeaderLeft}>
+        <Image
+          style={styles.userImage}
+          source={require('../../assets//userImage.jpeg')}
+        />
+      </View>
+      <View style={styles.tweetDetailHeaderRight}>
+        <Text style={styles.tweetUsername}>tomoyaki</Text>
+        <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+      </View>
     </View>
   );
 }
