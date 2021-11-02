@@ -5,7 +5,7 @@ export default function AppBar() {
   return (
     <View style={styles.appbar}>
       <View style={styles.appbarInner}>
-        <Text style={styles.appbarTitle}>motiβs</Text>
+        <Text style={styles.appbarTitle}>whoo-whoo</Text>
         <Text style={styles.appbarRight}>ログアウト</Text>
       </View>
     </View>
