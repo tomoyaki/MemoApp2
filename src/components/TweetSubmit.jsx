@@ -1,20 +1,9 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  View,
-  TextInput,
-  Text,
-  Image,
-  StyleSheet,
-} from 'react-native';
+import { View, TextInput, Image, StyleSheet } from 'react-native';
 
 export default function TweetSubmit() {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.cancelButton}>キャンセル</Text>
-        <Text style={styles.submitButton}>投稿する</Text>
-      </View>
+    <View style={styles.container}>
       <View style={styles.editArea}>
         <View style={styles.editAreaIcon}>
           <Image
@@ -32,7 +21,7 @@ export default function TweetSubmit() {
           />
         </View>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
