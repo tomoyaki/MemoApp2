@@ -7,12 +7,12 @@ export default function ProfileHeader() {
       <View style={styles.tweetDetailHeaderLeft}>
         <Image
           style={styles.userImage}
-          source={require('../../assets//userImage.jpeg')}
+          source={require('../../assets//MyProfileImage.png')}
         />
       </View>
       <View style={styles.tweetDetailHeaderRight}>
-        <Text style={styles.tweetUsername}>tomoyaki</Text>
-        <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+        <Text style={styles.tweetUsername}>持持 一太</Text>
+        <Text style={styles.tweetUserId}>@moti1ta</Text>
       </View>
     </View>
   );

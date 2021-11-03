@@ -8,7 +8,7 @@ export default function TweetSubmit() {
         <View style={styles.editAreaIcon}>
           <Image
             style={styles.userImage}
-            source={require('../../assets//userImage.jpeg')}
+            source={require('../../assets//MyProfileImage.png')}
           />
         </View>
         <View style={styles.inputContainer}>

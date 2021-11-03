@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, ScrollView, StyleSheet } from 'react-native';
 
 import AppBar from '../components/AppBar';
 import Tweet from '../components/Tweet';
@@ -11,7 +11,9 @@ export default function TimelineScreen() {
       {/* Header */}
       <AppBar />
       {/* Content */}
-      <Tweet />
+      <ScrollView>
+        <Tweet />
+      </ScrollView>
       {/* CircleButton */}
       <CircleButton>+</CircleButton>
     </View>
