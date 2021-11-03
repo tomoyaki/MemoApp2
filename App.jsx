@@ -5,5 +5,5 @@ import TweetModal from './src/screens/TweetModalScreen';
 import AllProfileScreen from './src/screens/AllProfileScreen';
 
 export default function App() {
-  return <AllProfileScreen />;
+  return <TimelineScreen />;
 }

@@ -10,13 +10,13 @@ export default function Tweet() {
         <View style={styles.tweetItemLeft}>
           <Image
             style={styles.userImage}
-            source={require('../../assets//userImage.jpeg')}
+            source={require('../../assets//MyProfileImage.png')}
           />
         </View>
         <View style={styles.tweetItemRight}>
           <View style={styles.tweetHeader}>
-            <Text style={styles.tweetUsername}>tomoyaki</Text>
-            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetUsername}>持持 一太</Text>
+            <Text style={styles.tweetUserId}>@moti1ta</Text>
             <Text style={styles.tweetPostedAt}>15m</Text>
           </View>
           <Text style={styles.tweetMessage}>
@@ -37,13 +37,13 @@ export default function Tweet() {
         <View style={styles.tweetItemLeft}>
           <Image
             style={styles.userImage}
-            source={require('../../assets//userImage.jpeg')}
+            source={require('../../assets//MyProfileImage.png')}
           />
         </View>
         <View style={styles.tweetItemRight}>
           <View style={styles.tweetHeader}>
-            <Text style={styles.tweetUsername}>tomoyaki</Text>
-            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetUsername}>持持 一太</Text>
+            <Text style={styles.tweetUserId}>@moti1ta</Text>
             <Text style={styles.tweetPostedAt}>15m</Text>
           </View>
           <Text style={styles.tweetMessage}>
@@ -64,13 +64,13 @@ export default function Tweet() {
         <View style={styles.tweetItemLeft}>
           <Image
             style={styles.userImage}
-            source={require('../../assets//userImage.jpeg')}
+            source={require('../../assets//MyProfileImage.png')}
           />
         </View>
         <View style={styles.tweetItemRight}>
           <View style={styles.tweetHeader}>
-            <Text style={styles.tweetUsername}>tomoyaki</Text>
-            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetUsername}>持持 一太</Text>
+            <Text style={styles.tweetUserId}>@moti1ta</Text>
             <Text style={styles.tweetPostedAt}>15m</Text>
           </View>
           <Text style={styles.tweetMessage}>
@@ -91,13 +91,13 @@ export default function Tweet() {
         <View style={styles.tweetItemLeft}>
           <Image
             style={styles.userImage}
-            source={require('../../assets//userImage.jpeg')}
+            source={require('../../assets//MyProfileImage.png')}
           />
         </View>
         <View style={styles.tweetItemRight}>
           <View style={styles.tweetHeader}>
-            <Text style={styles.tweetUsername}>tomoyaki</Text>
-            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetUsername}>持持 一太</Text>
+            <Text style={styles.tweetUserId}>@moti1ta</Text>
             <Text style={styles.tweetPostedAt}>15m</Text>
           </View>
           <Text style={styles.tweetMessage}>
@@ -118,13 +118,13 @@ export default function Tweet() {
         <View style={styles.tweetItemLeft}>
           <Image
             style={styles.userImage}
-            source={require('../../assets//userImage.jpeg')}
+            source={require('../../assets//MyProfileImage.png')}
           />
         </View>
         <View style={styles.tweetItemRight}>
           <View style={styles.tweetHeader}>
-            <Text style={styles.tweetUsername}>tomoyaki</Text>
-            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetUsername}>持持 一太</Text>
+            <Text style={styles.tweetUserId}>@moti1ta</Text>
             <Text style={styles.tweetPostedAt}>15m</Text>
           </View>
           <Text style={styles.tweetMessage}>
@@ -145,13 +145,13 @@ export default function Tweet() {
         <View style={styles.tweetItemLeft}>
           <Image
             style={styles.userImage}
-            source={require('../../assets//userImage.jpeg')}
+            source={require('../../assets//MyProfileImage.png')}
           />
         </View>
         <View style={styles.tweetItemRight}>
           <View style={styles.tweetHeader}>
-            <Text style={styles.tweetUsername}>tomoyaki</Text>
-            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetUsername}>持持 一太</Text>
+            <Text style={styles.tweetUserId}>@moti1ta</Text>
             <Text style={styles.tweetPostedAt}>15m</Text>
           </View>
           <Text style={styles.tweetMessage}>
@@ -172,13 +172,13 @@ export default function Tweet() {
         <View style={styles.tweetItemLeft}>
           <Image
             style={styles.userImage}
-            source={require('../../assets//userImage.jpeg')}
+            source={require('../../assets//MyProfileImage.png')}
           />
         </View>
         <View style={styles.tweetItemRight}>
           <View style={styles.tweetHeader}>
-            <Text style={styles.tweetUsername}>tomoyaki</Text>
-            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetUsername}>持持 一太</Text>
+            <Text style={styles.tweetUserId}>@moti1ta</Text>
             <Text style={styles.tweetPostedAt}>15m</Text>
           </View>
           <Text style={styles.tweetMessage}>
@@ -199,13 +199,13 @@ export default function Tweet() {
         <View style={styles.tweetItemLeft}>
           <Image
             style={styles.userImage}
-            source={require('../../assets//userImage.jpeg')}
+            source={require('../../assets//MyProfileImage.png')}
           />
         </View>
         <View style={styles.tweetItemRight}>
           <View style={styles.tweetHeader}>
-            <Text style={styles.tweetUsername}>tomoyaki</Text>
-            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetUsername}>持持 一太</Text>
+            <Text style={styles.tweetUserId}>@moti1ta</Text>
             <Text style={styles.tweetPostedAt}>15m</Text>
           </View>
           <Text style={styles.tweetMessage}>
@@ -226,13 +226,13 @@ export default function Tweet() {
         <View style={styles.tweetItemLeft}>
           <Image
             style={styles.userImage}
-            source={require('../../assets//userImage.jpeg')}
+            source={require('../../assets//MyProfileImage.png')}
           />
         </View>
         <View style={styles.tweetItemRight}>
           <View style={styles.tweetHeader}>
-            <Text style={styles.tweetUsername}>tomoyaki</Text>
-            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetUsername}>持持 一太</Text>
+            <Text style={styles.tweetUserId}>@moti1ta</Text>
             <Text style={styles.tweetPostedAt}>15m</Text>
           </View>
           <Text style={styles.tweetMessage}>
@@ -253,13 +253,13 @@ export default function Tweet() {
         <View style={styles.tweetItemLeft}>
           <Image
             style={styles.userImage}
-            source={require('../../assets//userImage.jpeg')}
+            source={require('../../assets//MyProfileImage.png')}
           />
         </View>
         <View style={styles.tweetItemRight}>
           <View style={styles.tweetHeader}>
-            <Text style={styles.tweetUsername}>tomoyaki</Text>
-            <Text style={styles.tweetUserId}>@tomoyaki74</Text>
+            <Text style={styles.tweetUsername}>持持 一太</Text>
+            <Text style={styles.tweetUserId}>@moti1ta</Text>
             <Text style={styles.tweetPostedAt}>15m</Text>
           </View>
           <Text style={styles.tweetMessage}>
