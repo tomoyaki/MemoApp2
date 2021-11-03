@@ -7,5 +7,5 @@ import ReplyModalScreen from './src/screens/ReplyModalScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
 
 export default function App() {
-  return <ProfileScreen />;
+  return <TimelineScreen />;
 }

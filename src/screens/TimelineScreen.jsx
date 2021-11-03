@@ -4,18 +4,17 @@ import { View, ScrollView, StyleSheet } from 'react-native';
 import AppBar from '../components/AppBar';
 import Tweet from '../components/Tweet';
 import CircleButton from '../components/CircleButton';
+import FooterBar from '../components/FooterBar';
 
 export default function TimelineScreen() {
   return (
     <View style={styles.container}>
-      {/* Header */}
       <AppBar />
-      {/* Content */}
       <ScrollView>
         <Tweet />
       </ScrollView>
-      {/* CircleButton */}
       <CircleButton>+</CircleButton>
+      <FooterBar />
     </View>
   );
 }
