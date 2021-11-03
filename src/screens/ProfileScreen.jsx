@@ -3,6 +3,7 @@ import { View, ScrollView, StyleSheet } from 'react-native';
 
 import AppBar from '../components/AppBar';
 import Profile from '../components/Profile';
+import FooterBar from '../components/FooterBar';
 
 export default function ProfileScreen() {
   return (
@@ -11,6 +12,7 @@ export default function ProfileScreen() {
       <ScrollView>
         <Profile />
       </ScrollView>
+      <FooterBar />
     </View>
   );
 }
