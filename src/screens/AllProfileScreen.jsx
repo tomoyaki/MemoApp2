@@ -9,14 +9,13 @@ import {
 } from 'react-native';
 
 import AppBar from '../components/AppBar';
+import SearchBox from '../components/SearchBox';
 
 export default function AllProfileScreen() {
   return (
     <View style={styles.container}>
       <AppBar />
-      <View style={styles.searchContainer}>
-        <TextInput placeholder="検索" style={styles.searchText} />
-      </View>
+      <SearchBox />
       {/* Profile Area */}
       <ScrollView>
         {/* content1 */}
@@ -59,7 +58,7 @@ export default function AllProfileScreen() {
             </View>
             <View style={styles.hobbyArea}>
               <Text style={styles.hobbyLabel}>趣味</Text>
-              <Text style={styles.hobbyContent}>旅行</Text>
+              <Text style={styles.hobbyContent}>ゴルフ</Text>
             </View>
           </View>
         </View>
@@ -81,7 +80,7 @@ export default function AllProfileScreen() {
             </View>
             <View style={styles.hobbyArea}>
               <Text style={styles.hobbyLabel}>趣味</Text>
-              <Text style={styles.hobbyContent}>旅行</Text>
+              <Text style={styles.hobbyContent}>サウナ</Text>
             </View>
           </View>
         </View>
@@ -103,7 +102,7 @@ export default function AllProfileScreen() {
             </View>
             <View style={styles.hobbyArea}>
               <Text style={styles.hobbyLabel}>趣味</Text>
-              <Text style={styles.hobbyContent}>旅行</Text>
+              <Text style={styles.hobbyContent}>料理</Text>
             </View>
           </View>
         </View>
@@ -116,19 +115,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#ffffff',
-  },
-  searchContainer: {
-    justifyContent: 'center',
-    marginHorizontal: 10,
-    marginVertical: 13,
-    backgroundColor: '#F0EFEF',
-    height: 31,
-    width: 352,
-    borderRadius: 50,
-  },
-  searchText: {
-    paddingLeft: 10,
-    fontSize: 20,
   },
   profileArea: {
     borderBottomWidth: 0.5,
