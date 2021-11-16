@@ -1,5 +1,11 @@
 import React from 'react';
-import { View, Text, TextInput, StyleSheet } from 'react-native';
+import {
+  View,
+  Text,
+  TextInput,
+  StyleSheet,
+  TouchableOpacity,
+} from 'react-native';
 import Button from '../components/Button';
 
 export default function SignUpScreen() {
@@ -12,7 +18,9 @@ export default function SignUpScreen() {
         <Button label="登録してはじめる" />
         <View style={styles.footer}>
           <Text style={styles.footerText}>パスワードを忘れた方は</Text>
-          <Text style={styles.footerLink}>こちら</Text>
+          <TouchableOpacity>
+            <Text style={styles.footerLink}>こちら</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>

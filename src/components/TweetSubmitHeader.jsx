@@ -1,12 +1,22 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet } from 'react-native';
+import {
+  SafeAreaView,
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+} from 'react-native';
 
 export default function TweetSubmitHeader() {
   return (
     <SafeAreaView>
       <View style={styles.header}>
-        <Text style={styles.cancelButton}>キャンセル</Text>
-        <Text style={styles.submitButton}>投稿する</Text>
+        <TouchableOpacity>
+          <Text style={styles.cancelButton}>キャンセル</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text style={styles.submitButton}>投稿する</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
