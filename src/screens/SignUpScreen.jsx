@@ -2,14 +2,14 @@ import React from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
 import Button from '../components/Button';
 
-export default function LogInScreen() {
+export default function SignUpScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.inner}>
-        <Text style={styles.title}>whoo-whooにログイン</Text>
+        <Text style={styles.title}>アカウント登録</Text>
         <TextInput style={styles.input} value="メールアドレス" />
         <TextInput style={styles.input} value="パスワード" />
-        <Button label="ログイン" />
+        <Button label="登録してはじめる" />
         <View style={styles.footer}>
           <Text style={styles.footerText}>パスワードを忘れた方は</Text>
           <Text style={styles.footerLink}>こちら</Text>

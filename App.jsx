@@ -9,6 +9,7 @@ import AllProfileScreen from './src/screens/AllProfileScreen';
 import ReplyModalScreen from './src/screens/ReplyModalScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
 import LogInScreen from './src/screens/LogInScreen';
+import SignUpScreen from './src/screens/SignUpScreen';
 
 const Stack = createStackNavigator();
 
@@ -16,7 +17,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="LogIn"
+        initialRouteName="SignUp"
         screenOptions={{
           headerStyle: { backgroundColor: '#467FD3' },
           headerTitleStyle: { color: '#ffffff' },
@@ -26,6 +27,7 @@ function App() {
         }}
       >
         <Stack.Screen name="LogIn" component={LogInScreen} />
+        <Stack.Screen name="SignUp" component={SignUpScreen} />
         <Stack.Screen name="Timeline" component={TimelineScreen} />
         <Stack.Screen name="TweetDetail" component={TweetDetailScreen} />
         <Stack.Screen name="TweetModal" component={TweetModalScreen} />
