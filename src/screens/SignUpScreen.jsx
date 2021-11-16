@@ -19,7 +19,10 @@ export default function SignUpScreen(props) {
         <Button
           label="登録してはじめる"
           onPress={() => {
-            navigation.navigate('Timeline');
+            navigation.reset({
+              index: 0,
+              routes: [{ name: 'Timeline' }],
+            });
           }}
         />
         <View style={styles.footer}>

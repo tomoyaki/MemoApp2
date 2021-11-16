@@ -19,7 +19,10 @@ export default function LogInScreen(props) {
         <Button
           label="ログイン"
           onPress={() => {
-            navigation.navigate('Timeline');
+            navigation.reset({
+              index: 0,
+              routes: [{ name: 'Timeline' }],
+            });
           }}
         />
         <View style={styles.footer}>
