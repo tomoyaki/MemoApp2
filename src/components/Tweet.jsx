@@ -1,10 +1,25 @@
 import React from 'react';
-import { View, ScrollView, Text, StyleSheet, Image } from 'react-native';
+import {
+  View,
+  ScrollView,
+  Text,
+  StyleSheet,
+  Image,
+  TouchableOpacity,
+  Alert,
+} from 'react-native';
 import { Feather, AntDesign } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Tweet() {
+  const navigation = useNavigation();
   return (
-    <View style={styles.tweetItem}>
+    <TouchableOpacity
+      style={styles.tweetItem}
+      onPress={() => {
+        navigation.navigate('TweetDetail');
+      }}
+    >
       <View style={styles.tweetItemLeft}>
         <Image
           style={styles.userImage}
@@ -23,13 +38,41 @@ export default function Tweet() {
           minim veniam, ...
         </Text>
         <View style={styles.tweetActivities}>
-          <Feather name="message-circle" size={17} color="gray" />
-          <AntDesign name="retweet" size={17} color="gray" />
-          <Feather name="heart" size={17} color="gray" />
-          <Feather name="share" size={17} color="gray" />
+          <TouchableOpacity
+            style={styles.touchableOpacityArea}
+            onPress={() => {
+              navigation.navigate('ReplyModal');
+            }}
+          >
+            <Feather name="message-circle" size={17} color="gray" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.touchableOpacityArea}
+            onPress={() => {
+              Alert.alert('ReTweet.');
+            }}
+          >
+            <AntDesign name="retweet" size={17} color="gray" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.touchableOpacityArea}
+            onPress={() => {
+              Alert.alert('Thumbs up.');
+            }}
+          >
+            <Feather name="heart" size={17} color="gray" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.touchableOpacityArea}
+            onPress={() => {
+              Alert.alert('Share.');
+            }}
+          >
+            <Feather name="share" size={17} color="gray" />
+          </TouchableOpacity>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
 
@@ -85,5 +128,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingVertical: 4,
     paddingHorizontal: 25,
+  },
+  touchableOpacityArea: {
+    paddingHorizontal: 10,
+    paddingVertical: 2,
   },
 });
