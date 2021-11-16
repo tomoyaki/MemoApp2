@@ -8,14 +8,20 @@ import {
 } from 'react-native';
 import Button from '../components/Button';
 
-export default function LogInScreen() {
+export default function LogInScreen(props) {
+  const { navigation } = props;
   return (
     <View style={styles.container}>
       <View style={styles.inner}>
         <Text style={styles.title}>whoo-whooにログイン</Text>
         <TextInput style={styles.input} value="メールアドレス" />
         <TextInput style={styles.input} value="パスワード" />
-        <Button label="ログイン" />
+        <Button
+          label="ログイン"
+          onPress={() => {
+            navigation.navigate('Timeline');
+          }}
+        />
         <View style={styles.footer}>
           <Text style={styles.footerText}>パスワードを忘れた方は</Text>
           <TouchableOpacity>
