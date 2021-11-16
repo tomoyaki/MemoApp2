@@ -12,7 +12,12 @@ export default function TimelineScreen(props) {
       <ScrollView>
         <Tweet />
       </ScrollView>
-      <CircleButton name="plus" />
+      <CircleButton
+        name="plus"
+        onPress={() => {
+          navigation.navigate('TweetModal');
+        }}
+      />
       <FooterBar />
     </View>
   );
