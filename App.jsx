@@ -14,7 +14,16 @@ const Stack = createStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Timeline">
+      <Stack.Navigator
+        initialRouteName="Timeline"
+        screenOptions={{
+          headerStyle: { backgroundColor: '#467FD3' },
+          headerTitleStyle: { color: '#ffffff' },
+          headerTitle: 'whoo-whoo',
+          headerTintColor: '#ffffff',
+          headerBackTitle: 'Back',
+        }}
+      >
         <Stack.Screen name="Timeline" component={TimelineScreen} />
         <Stack.Screen name="TweetDetail" component={TweetDetailScreen} />
         <Stack.Screen name="TweetModal" component={TweetModalScreen} />

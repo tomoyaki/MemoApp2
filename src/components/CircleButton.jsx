@@ -1,12 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { string } from 'prop-types';
+import { Feather } from '@expo/vector-icons';
 
 export default function CircleButton(props) {
   const { children } = props;
   return (
     <View style={styles.circleButton}>
-      <Text style={styles.circleButtonLabel}>{children}</Text>
+      <Feather name="plus" size={32} color="white" />
     </View>
   );
 }
