@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView, StyleSheet } from 'react-native';
+import { View, ScrollView, StyleSheet } from 'react-native';
 
 import Tweet from '../components/Tweet';
 import CircleButton from '../components/CircleButton';
@@ -12,7 +12,7 @@ export default function TimelineScreen(props) {
       <ScrollView>
         <Tweet />
       </ScrollView>
-      <CircleButton>+</CircleButton>
+      <CircleButton name="plus" />
       <FooterBar />
     </View>
   );
