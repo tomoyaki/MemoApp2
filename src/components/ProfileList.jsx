@@ -1,11 +1,25 @@
 import React from 'react';
-import { View, ScrollView, Text, Image, StyleSheet } from 'react-native';
+import {
+  View,
+  ScrollView,
+  Text,
+  Image,
+  StyleSheet,
+  TouchableOpacity,
+} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 export default function ProfileList() {
+  const navigation = useNavigation();
   return (
     <ScrollView>
       {/* content1 */}
-      <View style={styles.profileArea}>
+      <TouchableOpacity
+        style={styles.profileArea}
+        onPress={() => {
+          navigation.navigate('Profile');
+        }}
+      >
         <View style={styles.profileName}>
           <Image
             style={styles.userImage}
@@ -25,9 +39,14 @@ export default function ProfileList() {
             <Text style={styles.hobbyContent}>旅行</Text>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
       {/* content2 */}
-      <View style={styles.profileArea}>
+      <TouchableOpacity
+        style={styles.profileArea}
+        onPress={() => {
+          navigation.navigate('Profile');
+        }}
+      >
         <View style={styles.profileName}>
           <Image
             style={styles.userImage}
@@ -47,9 +66,14 @@ export default function ProfileList() {
             <Text style={styles.hobbyContent}>ゴルフ</Text>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
       {/* content3 */}
-      <View style={styles.profileArea}>
+      <TouchableOpacity
+        style={styles.profileArea}
+        onPress={() => {
+          navigation.navigate('Profile');
+        }}
+      >
         <View style={styles.profileName}>
           <Image
             style={styles.userImage}
@@ -69,9 +93,14 @@ export default function ProfileList() {
             <Text style={styles.hobbyContent}>サウナ</Text>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
       {/* content4 */}
-      <View style={styles.profileArea}>
+      <TouchableOpacity
+        style={styles.profileArea}
+        onPress={() => {
+          navigation.navigate('Profile');
+        }}
+      >
         <View style={styles.profileName}>
           <Image
             style={styles.userImage}
@@ -91,7 +120,7 @@ export default function ProfileList() {
             <Text style={styles.hobbyContent}>料理</Text>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
     </ScrollView>
   );
 }
