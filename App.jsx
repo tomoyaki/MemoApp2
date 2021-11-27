@@ -19,7 +19,7 @@ function App() {
       <Stack.Navigator
         initialRouteName="LogIn"
         screenOptions={{
-          headerStyle: { backgroundColor: '#467FD3' },
+          headerStyle: { backgroundColor: '#4B6251' },
           headerTitleStyle: { color: '#ffffff' },
           headerTitle: 'whoo-whoo',
           headerTintColor: '#ffffff',

@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     width: '100%',
     bottom: 0,
     height: 47,
-    backgroundColor: '#467FD3',
+    backgroundColor: '#4B6251',
     justifyContent: 'center',
   },
   appbarInner: {
