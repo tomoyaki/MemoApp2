@@ -6,15 +6,21 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 export default function TweetSubmitHeader() {
+  const navigation = useNavigation();
   return (
     <SafeAreaView>
       <View style={styles.header}>
         <TouchableOpacity>
           <Text style={styles.cancelButton}>キャンセル</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('Timeline');
+          }}
+        >
           <Text style={styles.submitButton}>投稿する</Text>
         </TouchableOpacity>
       </View>

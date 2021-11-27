@@ -26,8 +26,15 @@ export default function SignUpScreen(props) {
           }}
         />
         <View style={styles.footer}>
-          <Text style={styles.footerText}>パスワードを忘れた方は</Text>
-          <TouchableOpacity>
+          <Text style={styles.footerText}>既にアカウントをお持ちの方は</Text>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.reset({
+                index: 0,
+                routes: [{ name: 'LogIn' }],
+              });
+            }}
+          >
             <Text style={styles.footerLink}>こちら</Text>
           </TouchableOpacity>
         </View>

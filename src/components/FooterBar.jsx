@@ -1,14 +1,37 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, TouchableOpacity } from 'react-native';
 import { Feather } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 export default function FooterBar() {
+  const navigation = useNavigation();
   return (
     <View style={styles.appbar}>
       <View style={styles.appbarInner}>
-        <Feather name="clock" size={24} color="white" />
-        <Feather name="bell" size={24} color="white" />
-        <Feather name="book" size={24} color="white" />
+        <TouchableOpacity
+          style={styles.footerIcon}
+          onPress={() => {
+            navigation.navigate('Timeline');
+          }}
+        >
+          <Feather name="clock" size={24} color="white" />
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.footerIcon}
+          onPress={() => {
+            navigation.navigate('Timeline');
+          }}
+        >
+          <Feather name="bell" size={24} color="white" />
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.footerIcon}
+          onPress={() => {
+            navigation.navigate('AllProfile');
+          }}
+        >
+          <Feather name="book" size={24} color="white" />
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -25,6 +48,10 @@ const styles = StyleSheet.create({
   appbarInner: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal: 75,
+    paddingHorizontal: 50,
+  },
+  footerIcon: {
+    paddingVertical: 8,
+    paddingHorizontal: 30,
   },
 });
