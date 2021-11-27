@@ -13,7 +13,11 @@ export default function TweetSubmitHeader() {
   return (
     <SafeAreaView>
       <View style={styles.header}>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('Timeline');
+          }}
+        >
           <Text style={styles.cancelButton}>キャンセル</Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -50,7 +54,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 20,
     borderWidth: 1,
-    borderColor: '#467FD3',
+    borderColor: '#4B6251',
     overflow: 'hidden',
   },
 });

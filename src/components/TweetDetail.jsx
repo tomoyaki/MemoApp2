@@ -1,8 +1,17 @@
 import React from 'react';
-import { View, ScrollView, Text, StyleSheet } from 'react-native';
+import {
+  View,
+  ScrollView,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  Alert,
+} from 'react-native';
 import { Feather, AntDesign } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 export default function TweetDetail() {
+  const navigation = useNavigation();
   return (
     <View>
       <View style={styles.tweetDetailContent}>
@@ -23,10 +32,34 @@ export default function TweetDetail() {
       </View>
 
       <View style={styles.tweetDetailActivityIcons}>
-        <Feather name="message-circle" size={24} color="gray" />
-        <AntDesign name="retweet" size={24} color="gray" />
-        <Feather name="heart" size={24} color="gray" />
-        <Feather name="share" size={24} color="gray" />
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('ReplyModal');
+          }}
+        >
+          <Feather name="message-circle" size={24} color="gray" />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            Alert.alert('ReTweet.');
+          }}
+        >
+          <AntDesign name="retweet" size={24} color="gray" />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            Alert.alert('liked.');
+          }}
+        >
+          <Feather name="heart" size={24} color="gray" />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            Alert.alert('share.');
+          }}
+        >
+          <Feather name="share" size={24} color="gray" />
+        </TouchableOpacity>
       </View>
     </View>
   );
