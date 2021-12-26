@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import firebase from 'firebase';
 
 import TimelineScreen from './src/screens/TimelineScreen';
 import TweetDetailScreen from './src/screens/TweetDetailScreen';
@@ -11,7 +12,13 @@ import ProfileScreen from './src/screens/ProfileScreen';
 import LogInScreen from './src/screens/LogInScreen';
 import SignUpScreen from './src/screens/SignUpScreen';
 
+import { firebaseConfig } from './env';
+
 const Stack = createStackNavigator();
+
+if (firebase.apps.length === 0) {
+  firebase.initializeApp(firebaseConfig);
+}
 
 function App() {
   return (

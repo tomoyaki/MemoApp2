@@ -5,13 +5,35 @@ import {
   TextInput,
   StyleSheet,
   TouchableOpacity,
+  Alert,
 } from 'react-native';
+import firebase from 'firebase';
+
 import Button from '../components/Button';
 
 export default function SignUpScreen(props) {
   const { navigation } = props;
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  function handlePress() {
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+        const { user } = userCredential;
+        console.log(user.uid);
+        navigation.reset({
+          index: 0,
+          routes: [{ name: 'Timeline' }],
+        });
+      })
+      .catch((error) => {
+        console.log(error.code, error.message);
+        Alert.alert(error.code);
+      });
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.inner}>
@@ -38,15 +60,7 @@ export default function SignUpScreen(props) {
           secureTextEntry
           textContentType="password"
         />
-        <Button
-          label="登録してはじめる"
-          onPress={() => {
-            navigation.reset({
-              index: 0,
-              routes: [{ name: 'Timeline' }],
-            });
-          }}
-        />
+        <Button label="登録してはじめる" onPress={handlePress} />
         <View style={styles.footer}>
           <Text style={styles.footerText}>既にアカウントをお持ちの方は</Text>
           <TouchableOpacity
